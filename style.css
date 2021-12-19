@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Rochester&family=Sunflower:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');body{
+    display: flex;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+    background: url("img/bg2.png") no-repeat;
+    background-size: cover;
+}
+input#open{
+    display: none;
+}
+
+.my-card{
+    position: relative;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    transition: .3s;
+}
+.first_page{
+    position: relative;
+    background-color: antiquewhite;
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    transform-origin: left;
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,.13),30px 0 50px
+    rgba(0,0,0,0.1);
+    transition: .3s;
+}
+.first_page:before{
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 380px;
+}
+.second_page{
+    position: absolute;
+    background-color: antiquewhite;
+    width: 400px;
+    height: 500px;
+    z-index: -1;
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2);
+    top: 0;
+}
+.second_page:before{
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 380px;
+}
+
+.open{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    left: 0;
+    top: 0;
+    background: transparent;
+    z-index: 6;
+    cursor: pointer;
+}
+
+#open:checked ~ .first_page{
+    transform: rotateY(-155deg);
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,0.13),30px 0 50px
+    rgba(0,0,0,0.1);
+}
+
+#open:checked ~ .first_page:before{
+    z-index: 5;
+}
+
+.img{
+    width: 350px;
+    height: 380px;
+   display: block;
+    margin: 0 auto;
+}
+.title{
+    position: absolute;
+    top: 400px;
+    width: 250px;
+    text-align: center;
+    left: 70px;
+    font-size: 20px;
+    border: 2px solid black;
+    font-family: 'Twinkle Star', cursive;
+}
+.information{
+    text-align: left;
+    width: 390px;
+    line-height: 30px;
+    margin-left: 10px;
+    font-size: 18px;
+    font-family: 'Sunflower', sans-serif;
+}
+.mbti{
+    border-bottom: 1px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
