@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rochester&family=Sunflower:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');body{
     display: flex;
-    height: 95vh;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     background: url("img/bg2.png") no-repeat;
@@ -20,8 +20,8 @@ input#open{
 .first_page{
     position: relative;
     background-color: antiquewhite;
-    width: 400px;
-    height: 500px;
+    width: 900px;
+    height: 1000px;
     overflow: hidden;
     transform-origin: left;
     box-shadow: inset 100px 20px 100px rgba(0,0,0,.13),30px 0 50px
@@ -37,8 +37,8 @@ input#open{
 .second_page{
     position: absolute;
     background-color: antiquewhite;
-    width: 400px;
-    height: 500px;
+    width: 900px;
+    height: 1000px;
     z-index: -1;
     box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2);
     top: 0;
@@ -52,8 +52,8 @@ input#open{
 
 .open{
     position: absolute;
-    width: 400px;
-    height: 400px;
+    width: 900px;
+    height: 900px;
     left: 0;
     top: 0;
     background: transparent;
@@ -72,37 +72,47 @@ input#open{
 }
 
 .img{
-    width: 380px;
-    height: 380px;
+    width: 800px;
+    height: 700px;
    display: block;
-    margin: 10px auto 0;
+    margin: 20px auto 0;
     border: 2px solid black;
 }
 .title{
     position: absolute;
-    top: 420px;
-    width: 250px;
+    top: 800px;
+    width: 600px;
     text-align: center;
-    left: 70px;
-    font-size: 20px;
+    left: 130px;
+    font-size: 50px;
     border: 2px solid black;
     font-family: 'Twinkle Star', cursive;
 }
 .information{
     text-align: left;
-    width: 390px;
-    line-height: 30px;
+    width: 800px;
+    line-height: 60px;
     margin-left: 10px;
-    font-size: 18px;
+    font-size: 50px;
     font-family: 'Sunflower', sans-serif;
 }
 .mbti{
     border-bottom: 1px solid red;
 }
 
-
-
-
+.qa{
+    font-size: 50px;
+    background-color: transparent;
+    text-align: center;
+    margin:auto;
+}
+a{
+    text-decoration-line : none;
+    color: #000;
+}
+.qa:hover{
+    background-color: cornflowerblue;
+}
 
 
 
